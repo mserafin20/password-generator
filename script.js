@@ -14,7 +14,7 @@ var finalArray = "";
 function generatePassword(){
   passwordLength = prompt("Select a password between 8 and 128 characters");
 
-  if (passwordLength >= 8 && passwordLength <= 128 && Number.isInterger(Number(passwordLength))) {
+  if (passwordLength >= 8 && passwordLength <= 128 && Number.isInteger(Number(passwordLength))) {
 
 // Confirmation box that includes uppercase letters
 
@@ -64,7 +64,7 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  passwordText.value = finalArray;
 
 }
 
