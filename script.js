@@ -16,12 +16,21 @@ function generatePassword(){
 
   if (passwordLength >= 8 && passwordLength <= 128 && Number.isInterger(Number(passwordLength))){
 
-    // Confirmation box that includes uppercase letters
+// Confirmation box that includes uppercase letters
 
     var useUppercase = confirm("Include Upper case?")
     if (useUppercase) {
       characterPool = characterPool.concat(upperCase)
     }
+// Confirmation box for lowercase letters
+
+    var lowerCase = confirm("Include Lower case?")
+    if (lowerCase) {
+      characterPool = characterPool.concat(lowerCase)
+    }
+
+    
+
   }
 }
 
